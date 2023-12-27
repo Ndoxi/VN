@@ -11,7 +11,7 @@
     
     @char NPC1.Default pos:85,25 scale:2.5 look:Left
     @char Hero.Surprised
-    @print text:"Here, do a quest for me!" author:"NPC-1"
+    @print text:"Here, do a quest for me!" author:"NPC-1" 
     @hideChars
     @hidePrinter
 
