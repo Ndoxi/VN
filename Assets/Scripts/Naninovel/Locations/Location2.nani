@@ -1,0 +1,16 @@
+@back Cloudy
+
+@if MainQuestStage==0
+    @goto Location1
+@elseIf MainQuestStage==1
+    @goto .MainQuestTalk
+@endIf
+
+#MainQuestTalk
+    @set MainQuestStage=2
+    @print text:"Hi, I'm doing a quest!" author:{playerName}
+    @print text:"Nice, play this minigame!" author:"NPC-2"
+    @hidePrinter
+
+    @goto Minigame
+    @stop

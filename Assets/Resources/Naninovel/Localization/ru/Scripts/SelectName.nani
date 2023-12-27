@@ -1,0 +1,7 @@
+; English <en> to Russian <ru> localization document for `SelectName` naninovel script
+
+# 60964534
+; @input name summary:"Choose your name" value:"My Name" wait:true
+
+
+@input name summary:"Выберите ваше имя" value:"Мое имя" wait:true

@@ -174,3 +174,41 @@ MonoBehaviour:
     - name: SelectName
       pathPrefix: Scripts
       guid: 1af608228df4a8a43982c7f44ed4a878
+    - name: Location1
+      pathPrefix: Scripts
+      guid: 76488e0c1919a1e4ab9db2d4c2b7deb9
+    - name: Location2
+      pathPrefix: Scripts
+      guid: 71f0ab9b5f8099e49b3e91957c35bea4
+    - name: Minigame
+      pathPrefix: Scripts
+      guid: 8381b2eb460e5ac49938143af90631eb
+  - Id: Backgrounds/c080182b-1171-435e-aef3-5f89b8708e45
+    Resources:
+    - name: Default
+      pathPrefix: Backgrounds/MainBackground
+      guid: 4a5d168a8c1f7f04a8d3157208be5774
+    - name: MoreStars
+      pathPrefix: Backgrounds/MainBackground
+      guid: 766a594eedaec8846a30a18e532ce193
+    - name: Cloudy
+      pathPrefix: Backgrounds/MainBackground
+      guid: 0706397dcddd417428712b7584f2cbd3
+  - Id: Characters/5a3c87e7-d3eb-4689-873f-5087769257d7
+    Resources:
+    - name: Default
+      pathPrefix: Characters/Hero
+      guid: f8c9467a892580344bb697526dac0d13
+    - name: Surprised
+      pathPrefix: Characters/Hero
+      guid: 70632ddfe8e71b04b8f90ef7e29a9e98
+  - Id: Characters/914f0eeb-f042-4ee6-ad1a-cb63a8729345
+    Resources:
+    - name: Default
+      pathPrefix: Characters/NPC1
+      guid: d98fbe17966d8ef449b25b99024bf36f
+  - Id: Characters/13d651de-6897-4fd5-b40a-68ebac7564ea
+    Resources:
+    - name: Default
+      pathPrefix: Characters/NPC2
+      guid: 08c91a7677e66844281a99aaf6ea36f1

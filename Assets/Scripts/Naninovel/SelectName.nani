@@ -1,5 +1,5 @@
-
-@input name summary:"Choose your name" wait:true
+@input playerName summary:"Choose your name" value:"My Name" wait:true
 @stop
 
-@save
+@set MainQuestStage=0
+@goto Location1

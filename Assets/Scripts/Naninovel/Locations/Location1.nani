@@ -1,0 +1,24 @@
+@back MoreStars
+
+@if MainQuestStage==0
+    @goto .AcceptMainQuest
+@endIf
+
+#AcceptMainQuest
+    @set MainQuestStage=1
+    @char Hero.Default pos:15,25 scale:2.5
+    @print text:"Where am I?" author:{playerName}
+    
+    @char NPC1.Default pos:85,25 scale:2.5 look:Left
+    @char Hero.Surprised
+    @print text:"Here, do a quest for me!" author:"NPC-1"
+    @hideChars
+    @hidePrinter
+
+    @choice "Yes!"
+    @choice "Less enthusiastic yes."
+    @choice "Yes but latter."
+    @stop
+
+    @goto Location2
+    @stop
