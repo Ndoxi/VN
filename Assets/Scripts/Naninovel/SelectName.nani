@@ -1,0 +1,5 @@
+
+@input name summary:"Choose your name" wait:true
+@stop
+
+@save
