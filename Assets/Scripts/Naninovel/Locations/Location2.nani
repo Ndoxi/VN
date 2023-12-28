@@ -3,14 +3,23 @@
 @if MainQuestStage==0
     @goto Location1
 @elseIf MainQuestStage==1
-    @goto .MainQuestTalk
+    @goto .MainQuestDialog
+@elseIf MainQuestStage==5
+    @goto .AfterMinigameDialog
 @endIf
 
-#MainQuestTalk
+#MainQuestDialog
     @set MainQuestStage=2
+    @char Hero.Default pos:15,25 scale:2.5
     @print text:"Hi, I'm doing a quest!" author:{playerName}
+    @char NPC2.Default pos:85,25 scale:2.5
+    @char Hero.Surprised
     @print text:"Nice, play this minigame!" author:"NPC-2"
+    @hideChars
     @hidePrinter
 
     @goto Minigame
+    @stop
+
+#AfterMinigameDialog
     @stop

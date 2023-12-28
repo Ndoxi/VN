@@ -1,2 +1,8 @@
-
+@startTrans
+@loadMinigame wait:true
+@finishTrans 
+@startMinigame level:1 wait:true
+@unloadMinigame wait:true
+@set MainQuestStage=5
+@goto Location2
 @stop
