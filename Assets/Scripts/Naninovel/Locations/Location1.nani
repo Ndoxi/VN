@@ -1,8 +1,20 @@
 @back MoreStars
+@showUI MapButton
 
 @if MainQuestStage==0
     @goto .AcceptMainQuest
+@elseIf MainQuestStage==50
+    @goto .FinalDialoge
+@elseIf MainQuestStage==100
+    @goto .ThanksDialog
+@elseIf MainQuestStage==200||MainQuestStage==500
+    @goto .HateYouDialog
 @endIf
+
+@print text:"Nothing to see here!" author:Mind
+@hidePrinter
+@goto Map
+@stop
 
 #AcceptMainQuest
     @set MainQuestStage=1
@@ -21,4 +33,44 @@
     @stop
 
     @goto Location2
+    @stop
+
+#FinalDialoge
+    @char Hero.Default pos:15,25 scale:2.5
+    @print text:"I got the Item!!!" author:{playerName}
+    
+    @char NPC1.Default pos:85,25 scale:2.5 look:Left
+    @print text:"Nice!" author:"NPC-1"
+    @hide NPC1 
+    @char NPC2.Default pos:85,25 scale:2.5 look:Left
+    @print text:"Nice!" author:"NPC-2"
+    @hide NPC2
+    @hideChars
+
+    @print text:"Who to give the Item to?"
+    @choice "NPC-1" set:MainQuestStage=100
+    @choice "NPC-2" set:MainQuestStage=200
+    @choice "Keep it for yourself!" set:MainQuestStage=500
+    @stop
+    @hidePrinter
+
+    @goto Map
+
+#ThanksDialog
+    @char NPC1.Default pos:85,25 scale:2.5 look:Left
+    @print text:"Thank you, {playerName}!" author:"NPC-1"
+    @hide NPC1 
+    @hidePrinter
+
+    @goto Map
+    @stop
+
+#HateYouDialog
+
+    @char NPC1.Default pos:85,25 scale:2.5 look:Left
+    @print text:"I hate you, {playerName}!" author:"NPC-1"
+    @hide NPC1 
+    @hidePrinter
+
+    @goto Map
     @stop

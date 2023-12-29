@@ -1,4 +1,5 @@
 @back Cloudy
+@showUI MapButton
 
 @if MainQuestStage==0
     @goto Location1
@@ -6,7 +7,18 @@
     @goto .MainQuestDialog
 @elseIf MainQuestStage==5
     @goto .AfterMinigameDialog
+@elseIf MainQuestStage==40
+    @goto .Monolog
+@elseIf MainQuestStage==200
+    @goto .ThanksDialog
+@elseIf MainQuestStage==100||MainQuestStage==500
+    @goto .HateYouDialog
 @endIf
+
+@print text:"Nothing to see here!" author:Mind
+@hidePrinter
+@goto Map
+@stop
 
 #MainQuestDialog
     @set MainQuestStage=2
@@ -22,4 +34,45 @@
     @stop
 
 #AfterMinigameDialog
+    @set MainQuestStage=10
+    @set location3Available=true
+
+    @char Hero.Default pos:15,25 scale:2.5
+    @print text:"Nice minigame!" author:{playerName}
+    @char NPC2.Default pos:85,25 scale:2.5
+    @print text:"Thanks!" author:"NPC-2"
+    @hideChars
+    @hidePrinter
+
+    @goto Map
     @stop
+
+#Monolog
+    @set MainQuestStage=50
+    @char Hero.Default pos:15,25 scale:2.5
+    @print text:"Where is everyone?" author:{playerName}
+    @print text:"Let's check <b>location 1</b>"
+    @hideChars
+    @hidePrinter
+
+    @goto Map
+    @stop
+
+#ThanksDialog
+    @char NPC2.Default pos:85,25 scale:2.5 look:Left
+    @print text:"Thank you, {playerName}!" author:"NPC-2"
+    @hide NPC2 
+    @hidePrinter
+
+    @goto Map
+    @stop
+
+#HateYouDialog
+    @char NPC2.Default pos:85,25 scale:2.5 look:Left
+    @print text:"I hate you, {playerName}!" author:"NPC-2"
+    @hide NPC2
+    @hidePrinter
+
+    @goto Map
+    @stop
+    

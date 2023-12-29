@@ -15,3 +15,5 @@ MonoBehaviour:
   PredefinedVariables:
   - name: G_MINIGAME_SCENE_NAME
     value: '"Demo"'
+  - name: ItemAquired
+    value: false

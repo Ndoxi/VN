@@ -1,0 +1,34 @@
+@back Default
+@showUI MapButton
+
+@if MainQuestStage==10
+    @goto .FirstVisit
+@endIf
+
+@print text:"Nothing to see here!" author:Mind
+@hidePrinter
+@goto Map
+@stop
+
+#FirstVisit
+    @set MainQuestStage=20
+    @char Hero.Default pos:15,25 scale:2.5
+    @print "Okay, it's gotta be around here somewhere!" author:{playerName}
+    @hideChars
+    @hidePrinter
+    @showUI Location3Items time:1.5
+    @stop
+
+#QuestItemEarned
+    @set MainQuestStage=40
+    @set ItemAquired=true
+    @hideUI Location3Items time:0.5
+    @char Hero.Default pos:15,25 scale:2.5
+    @print "Nice, that's what I've been looking for! Time to return to <b>location 2</b>" author:{playerName}
+    @set location3Available=false
+    @hideChars
+    @hidePrinter
+
+    @goto Map
+
+@stop

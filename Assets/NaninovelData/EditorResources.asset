@@ -166,6 +166,15 @@ MonoBehaviour:
     - name: ToastUI
       pathPrefix: UI
       guid: dd85ce99288c2f8488447fa511b1c0d6
+    - name: Map
+      pathPrefix: UI
+      guid: 9eb0c761cc340aa4793f8f97c3e5690e
+    - name: Location3Items
+      pathPrefix: UI
+      guid: 85c4021e887864247bb1ff3d5479e925
+    - name: MapButton
+      pathPrefix: UI
+      guid: e68af3efafe48ad43822021e3bc2a2da
   - Id: Scripts
     Resources:
     - name: GameStart
@@ -183,6 +192,12 @@ MonoBehaviour:
     - name: Minigame
       pathPrefix: Scripts
       guid: 8381b2eb460e5ac49938143af90631eb
+    - name: Location3
+      pathPrefix: Scripts
+      guid: ffd64c0c908e88549a82c09c4eb3056a
+    - name: Map
+      pathPrefix: Scripts
+      guid: 656462f0bce701341955b7e11dd4b6a9
   - Id: Backgrounds/c080182b-1171-435e-aef3-5f89b8708e45
     Resources:
     - name: Default
