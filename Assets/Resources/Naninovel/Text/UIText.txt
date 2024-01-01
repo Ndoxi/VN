@@ -1,0 +1,14 @@
+;AdditionalButtons
+MapButtonText: Map
+LogButtonText: Log
+
+;QuestLogUI
+QuestStage_1: Stage 1
+QuestStage_5: Stage 5
+QuestStage_10: Stage 10
+QuestStage_20: Stage 20
+QuestStage_40: Stage 40
+QuestStage_50: Stage 50
+QuestStage_100: Stage 100
+QuestStage_200: Stage 200
+QuestStage_500: Stage 500

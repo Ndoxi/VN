@@ -37,18 +37,15 @@ namespace VN.Services
         public void Add(int questStage)
         {
             _log.Add(questStage);
-            _uIManager.GetUI<QuestLogUI>().AddLog(GetQuestStageTextId(questStage));
-
-            string GetQuestStageTextId(int questStage)
-            {
-                return $"-- Add log for quest stage {questStage} --";
-            }
+            _uIManager.GetUI<QuestLogUI>()
+                      .AddLog(questStage);
         }
 
         public void Clear()
         {
             _log.Clear();
-            _uIManager.GetUI<QuestLogUI>().ClearLog();
+            _uIManager.GetUI<QuestLogUI>()
+                      .ClearLog();
         }
     }
 }

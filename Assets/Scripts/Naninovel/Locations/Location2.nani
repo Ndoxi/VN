@@ -15,7 +15,7 @@
     @goto .HateYouDialog
 @endIf
 
-@print text:"Nothing to see here!" author:Mind
+Mind: Nothing to see here!
 @hidePrinter
 @goto Map
 @stop
@@ -25,10 +25,12 @@
     @addQuestLog stageId:2
 
     @char Hero.Default pos:15,25 scale:2.5
-    @print text:"Hi, I'm doing a quest!" author:{playerName}
+    Hero: Hi, I'm doing a quest!
+
     @char NPC2.Default pos:85,25 scale:2.5
     @char Hero.Surprised
-    @print text:"Nice, play this minigame!" author:"NPC-2"
+    NPC2: Nice, play this minigame!
+
     @hideChars
     @hidePrinter
 
@@ -41,9 +43,11 @@
     @set location3Available=true
 
     @char Hero.Default pos:15,25 scale:2.5
-    @print text:"Nice minigame!" author:{playerName}
+    Hero: Nice minigame!
+
     @char NPC2.Default pos:85,25 scale:2.5
-    @print text:"Thanks!" author:"NPC-2"
+    NPC2: Thanks!
+
     @hideChars
     @hidePrinter
 
@@ -55,8 +59,9 @@
     @addQuestLog stageId:50
 
     @char Hero.Default pos:15,25 scale:2.5
-    @print text:"Where is everyone?" author:{playerName}
-    @print text:"Let's check <b>location 1</b>"
+    Hero: Where is everyone?
+    Hero: Let's check <b>location 1</b>!
+
     @hideChars
     @hidePrinter
 
@@ -65,7 +70,8 @@
 
 #ThanksDialog
     @char NPC2.Default pos:85,25 scale:2.5 look:Left
-    @print text:"Thank you, {playerName}!" author:"NPC-2"
+    NPC2: Thank you, {playerName}!
+
     @hide NPC2 
     @hidePrinter
 
@@ -74,7 +80,8 @@
 
 #HateYouDialog
     @char NPC2.Default pos:85,25 scale:2.5 look:Left
-    @print text:"I hate you, {playerName}!" author:"NPC-2"
+    NPC2: I hate you, {playerName}!
+
     @hide NPC2
     @hidePrinter
 

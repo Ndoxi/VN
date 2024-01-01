@@ -10,9 +10,9 @@ namespace VN.UI
         [Space, SerializeField]
         private QuestLogTab _questLogTab;
 
-        public void AddLog(string textId)
+        public void AddLog(int logId)
         {
-            _questLogTab.AddText(textId);
+            _questLogTab.AddLog(logId);
         }
 
         public void ClearLog()

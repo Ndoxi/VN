@@ -11,7 +11,7 @@
     @goto .HateYouDialog
 @endIf
 
-@print text:"Nothing to see here!" author:Mind
+Mind: Nothing to see here!
 @hidePrinter
 @goto Map
 @stop
@@ -21,17 +21,17 @@
     @addQuestLog stageId:1
 
     @char Hero.Default pos:15,25 scale:2.5
-    @print text:"Where am I?" author:{playerName}
-    
+    Hero: Where am I?
+
     @char NPC1.Default pos:85,25 scale:2.5 look:Left
     @char Hero.Surprised
-    @print text:"Here, do a quest for me!" author:"NPC-1" 
+    NPC1.Default: Here, do a quest for me!
     @hideChars
     @hidePrinter
 
-    @choice "Yes!"
-    @choice "Less enthusiastic yes."
-    @choice "Yes but latter."
+    @choice {t_acceptQuestChoice1}
+    @choice {t_acceptQuestChoice2}
+    @choice {t_acceptQuestChoice3}
     @stop
 
     @goto Location2
@@ -39,20 +39,21 @@
 
 #FinalDialoge
     @char Hero.Default pos:15,25 scale:2.5
-    @print text:"I got the Item!!!" author:{playerName}
-    
+    Hero: I got the Item!!!
     @char NPC1.Default pos:85,25 scale:2.5 look:Left
-    @print text:"Nice!" author:"NPC-1"
+    NPC1: Nice!
     @hide NPC1 
+
     @char NPC2.Default pos:85,25 scale:2.5 look:Left
-    @print text:"Nice!" author:"NPC-2"
+    NPC2: Nice!
     @hide NPC2
+
     @hideChars
 
-    @print text:"Who to give the Item to?"
-    @choice "NPC-1" set:MainQuestStage=100 do:"@addQuestLog stageId:100"
-    @choice "NPC-2" set:MainQuestStage=200 do:"@addQuestLog stageId:200"
-    @choice "Keep it for yourself!" set:MainQuestStage=500 do:"@addQuestLog stageId:500"
+    Mind: Who to give the Item to?
+    @choice {t_giveItemOption1} set:MainQuestStage=100 do:"@addQuestLog stageId:100"
+    @choice {t_giveItemOption2} set:MainQuestStage=200 do:"@addQuestLog stageId:200"
+    @choice {t_giveItemOption3} set:MainQuestStage=500 do:"@addQuestLog stageId:500"
     @stop
     @hidePrinter
 
@@ -60,7 +61,7 @@
 
 #ThanksDialog
     @char NPC1.Default pos:85,25 scale:2.5 look:Left
-    @print text:"Thank you, {playerName}!" author:"NPC-1"
+    NPC1: Thank you, {playerName}!
     @hide NPC1 
     @hidePrinter
 
@@ -70,7 +71,7 @@
 #HateYouDialog
 
     @char NPC1.Default pos:85,25 scale:2.5 look:Left
-    @print text:"I hate you, {playerName}!" author:"NPC-1"
+    NPC1: I hate you, {playerName}!
     @hide NPC1 
     @hidePrinter
 

@@ -12,10 +12,10 @@ namespace VN.UI
         [SerializeField] private QuestLogRecord _recordPrefab;
         private readonly List<QuestLogRecord> _logRecords = new List<QuestLogRecord>();
 
-        public void AddText(string textId)
+        public void AddLog(int logId)
         {
             QuestLogRecord newRecord = GameObject.Instantiate(_recordPrefab, _recordsList.content.transform);
-            newRecord.SetData(textId);
+            newRecord.SetData(logId);
             _logRecords.Add(newRecord);
             UpdateLayout();
         }

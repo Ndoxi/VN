@@ -1,4 +1,4 @@
-@input playerName summary:"Choose your name" value:"My Name" wait:true
+@input playerName summary:{t_selectNameMessage} value:{t_defaultValue} wait:true
 @stop
 
 @set MainQuestStage=0

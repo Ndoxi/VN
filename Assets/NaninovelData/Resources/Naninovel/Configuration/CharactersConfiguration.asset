@@ -32,7 +32,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
     guid: 33e2fbd3-66e2-451a-a5ea-4a73811b675b
     customData:
-      rid: -2
+      id: 0
     Pivot: {x: 0.5, y: 0}
     PixelsPerUnit: 100
     EnableDepthPass: 1
@@ -80,7 +80,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       guid: 5a3c87e7-d3eb-4689-873f-5087769257d7
       customData:
-        rid: -2
+        id: 0
       Pivot: {x: 0.5, y: 0}
       PixelsPerUnit: 100
       EnableDepthPass: 1
@@ -95,7 +95,7 @@ MonoBehaviour:
         width: 1
         height: 1
       BakedLookDirection: 1
-      DisplayName: 
+      DisplayName: '{playerName}'
       UseCharacterColor: 0
       NameColor: {r: 1, g: 1, b: 1, a: 1}
       MessageColor: {r: 1, g: 1, b: 1, a: 1}
@@ -122,7 +122,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       guid: 914f0eeb-f042-4ee6-ad1a-cb63a8729345
       customData:
-        rid: -2
+        id: 0
       Pivot: {x: 0.5, y: 0}
       PixelsPerUnit: 100
       EnableDepthPass: 1
@@ -164,7 +164,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       guid: 13d651de-6897-4fd5-b40a-68ebac7564ea
       customData:
-        rid: -2
+        id: 0
       Pivot: {x: 0.5, y: 0}
       PixelsPerUnit: 100
       EnableDepthPass: 1
@@ -204,7 +204,6 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   SharedPoses: []
   references:
-    version: 2
-    RefIds:
-    - rid: -2
+    version: 1
+    00000000:
       type: {class: , ns: , asm: }

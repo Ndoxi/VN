@@ -5,7 +5,7 @@
     @goto .FirstVisit
 @endIf
 
-@print text:"Nothing to see here!" author:Mind
+Mind: Nothing to see here!
 @hidePrinter
 @goto Map
 @stop
@@ -15,7 +15,8 @@
     @addQuestLog stageId:20
 
     @char Hero.Default pos:15,25 scale:2.5
-    @print "Okay, it's gotta be around here somewhere!" author:{playerName}
+    Hero: Okay, it's gotta be around here somewhere!
+
     @hideChars
     @hidePrinter
     @showUI Location3Items time:1.5
@@ -28,7 +29,8 @@
     @set ItemAquired=true
     @hideUI Location3Items time:0.5
     @char Hero.Default pos:15,25 scale:2.5
-    @print "Nice, that's what I've been looking for! Time to return to <b>location 2</b>" author:{playerName}
+    Hero: Nice, that's what I've been looking for! Time to return to <b>location 2</b>!
+    
     @set location3Available=false
     @hideChars
     @hidePrinter

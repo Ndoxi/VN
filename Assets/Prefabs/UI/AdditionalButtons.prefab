@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7546200435563763182}
   - component: {fileID: 1972945296179422891}
   - component: {fileID: 5604062972969318159}
+  - component: {fileID: 832216654285274458}
   m_Layer: 5
   m_Name: MapButton
   m_TagString: Untagged
@@ -152,6 +153,36 @@ MonoBehaviour:
 '
   playOnAwake: 0
   disableWaitInput: 0
+--- !u!114 &832216654285274458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683882375296980347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a93ec42ebe3044abd36de19cc3a880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  category: UIText
+  key: MapButtonText
+  defaultValue: Map
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 314195882347248518}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &707343806227836741
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +196,7 @@ GameObject:
   - component: {fileID: 3527637721397169313}
   - component: {fileID: 1464730262179736439}
   - component: {fileID: 3306576291570880519}
+  - component: {fileID: 7834062806356161578}
   m_Layer: 5
   m_Name: LogButton
   m_TagString: Untagged
@@ -302,6 +334,36 @@ MonoBehaviour:
   scriptText: '@showUI QuestLog'
   playOnAwake: 0
   disableWaitInput: 0
+--- !u!114 &7834062806356161578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707343806227836741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a93ec42ebe3044abd36de19cc3a880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  category: UIText
+  key: LogButtonText
+  defaultValue: Log
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1141896204039955363}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1692736118247304163
 GameObject:
   m_ObjectHideFlags: 0
