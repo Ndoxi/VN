@@ -1,0 +1,3 @@
+t_Npc1Name: NPC-1
+t_Npc2Name: NPC-2
+t_MindName: Mind

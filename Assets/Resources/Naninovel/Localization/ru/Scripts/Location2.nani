@@ -2,27 +2,36 @@
 
 # 16bcddda
 ; Mind: Nothing to see here!
+Mind: Здесь ничего нет!
 
 # 102fc13d
 ;     Hero: Hi, I'm doing a quest!
+Hero: Привет, я выполняю квест!
 
 # cc21f46b
 ;     NPC2: Nice, play this minigame!
+NPC2: Отлично, поиграй в мини-игру!
 
 # e6ba3ed5
 ;     Hero: Nice minigame!
+Hero: Хорошая игра!
 
 # 4a504d0a
 ;     NPC2: Thanks!
+NPC2: Спасибо!
 
 # 8b66ce54
 ;     Hero: Where is everyone?
+Hero: А где все?
 
 # c739c3c3
 ;     Hero: Let's check <b>location 1</b>!
+Hero: Давай проверим <b>локацию 1</b>!
 
 # f5538000
 ;     NPC2: Thank you, {playerName}!
+NPC2: Спасибо тебе, {playerName}!
 
 # 2dbaeee2
 ;     NPC2: I hate you, {playerName}!
+ NPC2: Ты мне не нравишься, {playerName}!

@@ -1,8 +1,5 @@
-;AdditionalButtons
 MapButtonText: Map
 LogButtonText: Log
-
-;QuestLogUI
 QuestStage_1: Stage 1
 QuestStage_5: Stage 5
 QuestStage_10: Stage 10

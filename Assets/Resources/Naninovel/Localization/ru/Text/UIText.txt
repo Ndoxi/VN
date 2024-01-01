@@ -1,13 +1,13 @@
 ; English <en> to Russian <ru> localization document for `UIText` managed text document
 
-MapButtonText: Map
-LogButtonText: Log
-QuestStage_1: Stage 1
-QuestStage_5: Stage 5
-QuestStage_10: Stage 10
-QuestStage_20: Stage 20
-QuestStage_40: Stage 40
-QuestStage_50: Stage 50
-QuestStage_100: Stage 100
-QuestStage_200: Stage 200
-QuestStage_500: Stage 500
+MapButtonText: Карта
+LogButtonText: Лог
+QuestStage_1: Стадия 1
+QuestStage_5: Стадия 5
+QuestStage_10: Стадия 10
+QuestStage_20: Стадия 20
+QuestStage_40: Стадия 40
+QuestStage_50: Стадия 50
+QuestStage_100: Стадия 100
+QuestStage_200: Стадия 200
+QuestStage_500: Стадия 500

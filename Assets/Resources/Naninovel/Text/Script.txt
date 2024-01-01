@@ -1,15 +1,8 @@
-;SelectName
 t_selectNameMessage: Choose your name
 t_defaultValue: My name
-
-;Location1
 t_acceptQuestChoice1: Yes!
 t_acceptQuestChoice2: Less enthusiastic yes.
 t_acceptQuestChoice3: Yes but latter.
-
 t_giveItemOption1: NPC-1
 t_giveItemOption2: NPC-2
 t_giveItemOption3: Keep it for yourself!
-
-;Location2
-;Location3

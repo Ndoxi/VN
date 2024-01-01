@@ -2,12 +2,15 @@
 
 # 16bcddda
 ; Mind: Nothing to see here!
+Mind: Здесь ничего нет!
 
 # 9e42623c
 ;     Hero: Where am I?
+Hero: Где я?
 
 # ebdda92c
 ;     NPC1.Default: Here, do a quest for me!
+ NPC1.Default: Сделай для меня квест!
 
 # c4440e66
 ;     @choice {t_acceptQuestChoice1}
@@ -20,15 +23,19 @@
 
 # 9409577d
 ;     Hero: I got the Item!!!
+Hero: У меня есть предмет!!!
 
 # 8d25b095
 ;     NPC1: Nice!
+NPC1: Отлично!
 
 # 1862d8b
 ;     NPC2: Nice!
+NPC2: Замечательно!
 
 # 54921321
 ;     Mind: Who to give the Item to?
+Mind: Кому мне отдать предмет?
 
 # e215c18c
 ;     @choice {t_giveItemOption1} set:MainQuestStage=100 do:"@addQuestLog stageId:100"
@@ -41,6 +48,8 @@
 
 # c04aba0d
 ;     NPC1: Thank you, {playerName}!
+NPC1: Спасибо, {playerName}!
 
 # 7f6a26a6
 ;     NPC1: I hate you, {playerName}!
+NPC1: Ты мне не нравишься, {playerName}!
