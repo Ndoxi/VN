@@ -12,7 +12,6 @@ namespace VN.Services
     {
         private readonly List<int> _log;
         private readonly UIManager _uIManager;
-        private QuestLogUI _questLogUI;
 
         public QuestLogService(UIManager uIManager)
         {
@@ -32,18 +31,24 @@ namespace VN.Services
 
         public UniTask InitializeServiceAsync()
         {
-            _questLogUI = _uIManager.GetUI<QuestLogUI>();
             return UniTask.CompletedTask;
         }
 
         public void Add(int questStage)
         {
             _log.Add(questStage);
+            _uIManager.GetUI<QuestLogUI>().AddLog(GetQuestStageTextId(questStage));
+
+            string GetQuestStageTextId(int questStage)
+            {
+                return $"-- Add log for quest stage {questStage} --";
+            }
         }
 
         public void Clear()
         {
             _log.Clear();
+            _uIManager.GetUI<QuestLogUI>().ClearLog();
         }
     }
 }

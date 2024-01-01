@@ -1,5 +1,5 @@
 @back Default
-@showUI MapButton
+@showUI AdditionalButtons
 
 @if MainQuestStage==10
     @goto .FirstVisit
@@ -12,6 +12,8 @@
 
 #FirstVisit
     @set MainQuestStage=20
+    @addQuestLog stageId:20
+
     @char Hero.Default pos:15,25 scale:2.5
     @print "Okay, it's gotta be around here somewhere!" author:{playerName}
     @hideChars
@@ -21,6 +23,8 @@
 
 #QuestItemEarned
     @set MainQuestStage=40
+    @addQuestLog stageId:40
+
     @set ItemAquired=true
     @hideUI Location3Items time:0.5
     @char Hero.Default pos:15,25 scale:2.5

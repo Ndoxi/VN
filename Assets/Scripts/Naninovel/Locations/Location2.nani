@@ -1,5 +1,5 @@
 @back Cloudy
-@showUI MapButton
+@showUI AdditionalButtons
 
 @if MainQuestStage==0
     @goto Location1
@@ -22,6 +22,8 @@
 
 #MainQuestDialog
     @set MainQuestStage=2
+    @addQuestLog stageId:2
+
     @char Hero.Default pos:15,25 scale:2.5
     @print text:"Hi, I'm doing a quest!" author:{playerName}
     @char NPC2.Default pos:85,25 scale:2.5
@@ -35,6 +37,7 @@
 
 #AfterMinigameDialog
     @set MainQuestStage=10
+    @addQuestLog stageId:10
     @set location3Available=true
 
     @char Hero.Default pos:15,25 scale:2.5
@@ -49,6 +52,8 @@
 
 #Monolog
     @set MainQuestStage=50
+    @addQuestLog stageId:50
+
     @char Hero.Default pos:15,25 scale:2.5
     @print text:"Where is everyone?" author:{playerName}
     @print text:"Let's check <b>location 1</b>"

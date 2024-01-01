@@ -1,5 +1,5 @@
 @back MoreStars
-@showUI MapButton
+@showUI AdditionalButtons
 
 @if MainQuestStage==0
     @goto .AcceptMainQuest
@@ -18,6 +18,8 @@
 
 #AcceptMainQuest
     @set MainQuestStage=1
+    @addQuestLog stageId:1
+
     @char Hero.Default pos:15,25 scale:2.5
     @print text:"Where am I?" author:{playerName}
     
@@ -48,9 +50,9 @@
     @hideChars
 
     @print text:"Who to give the Item to?"
-    @choice "NPC-1" set:MainQuestStage=100
-    @choice "NPC-2" set:MainQuestStage=200
-    @choice "Keep it for yourself!" set:MainQuestStage=500
+    @choice "NPC-1" set:MainQuestStage=100 do:"@addQuestLog stageId:100"
+    @choice "NPC-2" set:MainQuestStage=200 do:"@addQuestLog stageId:200"
+    @choice "Keep it for yourself!" set:MainQuestStage=500 do:"@addQuestLog stageId:500"
     @stop
     @hidePrinter
 

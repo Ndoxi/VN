@@ -172,9 +172,12 @@ MonoBehaviour:
     - name: Location3Items
       pathPrefix: UI
       guid: 85c4021e887864247bb1ff3d5479e925
-    - name: MapButton
+    - name: AdditionalButtons
       pathPrefix: UI
       guid: e68af3efafe48ad43822021e3bc2a2da
+    - name: QuestLog
+      pathPrefix: UI
+      guid: 573db4eaed6de634db06c41042daf88d
   - Id: Scripts
     Resources:
     - name: GameStart
