@@ -8,3 +8,6 @@ t_acceptQuestChoice3: Да, но позже.
 t_giveItemOption1: НПС-1
 t_giveItemOption2: НПС-2
 t_giveItemOption3: Оставить себе!
+t_Npc1Name: НПС-1
+t_Npc2Name: НПС-2
+t_MindName: Разум

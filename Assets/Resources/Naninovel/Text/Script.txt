@@ -6,3 +6,8 @@ t_acceptQuestChoice3: Yes but latter.
 t_giveItemOption1: NPC-1
 t_giveItemOption2: NPC-2
 t_giveItemOption3: Keep it for yourself!
+
+;Character names
+t_Npc1Name: NPC-1
+t_Npc2Name: NPC-2
+t_MindName: Mind
