@@ -3,6 +3,7 @@
 MapButtonText: Карта
 LogButtonText: Лог
 QuestStage_1: Стадия 1
+QuestStage_2: Стадия 2
 QuestStage_5: Стадия 5
 QuestStage_10: Стадия 10
 QuestStage_20: Стадия 20

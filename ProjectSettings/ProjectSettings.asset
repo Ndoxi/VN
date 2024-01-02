@@ -674,6 +674,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     0: MINIGAME_-_MEMORY_ASSET_STORE_RELEASE;PUBLISHING_TOOLS_ASSET_STORE_RELEASE
+    1: MINIGAME_-_MEMORY_ASSET_STORE_RELEASE;PUBLISHING_TOOLS_ASSET_STORE_RELEASE
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

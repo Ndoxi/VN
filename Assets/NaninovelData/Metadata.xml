@@ -110,6 +110,11 @@
         &lt;Type&gt;TextPrinters&lt;/Type&gt;
         &lt;Appearances /&gt;
       &lt;/Actor&gt;
+      &lt;Actor&gt;
+        &lt;Id&gt;CustomPrinter&lt;/Id&gt;
+        &lt;Type&gt;TextPrinters&lt;/Type&gt;
+        &lt;Appearances /&gt;
+      &lt;/Actor&gt;
     &lt;/Actors&gt;
     &lt;Commands&gt;
       &lt;Command&gt;
@@ -505,6 +510,10 @@
       &lt;Resource&gt;
         &lt;Path&gt;Default&lt;/Path&gt;
         &lt;Type&gt;Characters/NPC2&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;CustomPrinter&lt;/Path&gt;
+        &lt;Type&gt;TextPrinters&lt;/Type&gt;
       &lt;/Resource&gt;
     &lt;/Resources&gt;
     &lt;Constants&gt;

@@ -1,6 +1,7 @@
 MapButtonText: Map
 LogButtonText: Log
 QuestStage_1: Stage 1
+QuestStage_2: Stage 2
 QuestStage_5: Stage 5
 QuestStage_10: Stage 10
 QuestStage_20: Stage 20
