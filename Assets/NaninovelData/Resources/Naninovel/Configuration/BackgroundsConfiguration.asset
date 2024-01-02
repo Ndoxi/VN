@@ -30,7 +30,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
     guid: 1b41e48d-297f-46fc-bf58-f7ce2053e9f5
     customData:
-      rid: -2
+      id: 0
     Pivot: {x: 0.5, y: 0.5}
     PixelsPerUnit: 100
     EnableDepthPass: 1
@@ -62,7 +62,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       guid: c080182b-1171-435e-aef3-5f89b8708e45
       customData:
-        rid: -2
+        id: 0
       Pivot: {x: 0.5, y: 0.5}
       PixelsPerUnit: 100
       EnableDepthPass: 1
@@ -81,7 +81,6 @@ MonoBehaviour:
       Poses: []
   SharedPoses: []
   references:
-    version: 2
-    RefIds:
-    - rid: -2
+    version: 1
+    00000000:
       type: {class: , ns: , asm: }
